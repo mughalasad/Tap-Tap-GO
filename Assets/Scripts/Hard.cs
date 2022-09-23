@@ -1,7 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+
 public class Hard : MonoBehaviour,IDataPersistence
 {
 [SerializeField]
@@ -10,11 +10,13 @@ public class Hard : MonoBehaviour,IDataPersistence
     private int randomindex;
     private int randomside;
     private int spd=0;
+    private int themes;
     [SerializeField] public TextMeshProUGUI scoretext;
 
     [SerializeField] private Transform UpPos,downPos;
     [SerializeField] private GameObject player1;
     [SerializeField] private GameObject player2;
+    [SerializeField] private GameObject player3;
     private GameObject player;
     scorecounter score = new scorecounter();
     // Start is called before the first frame update
@@ -27,20 +29,25 @@ public class Hard : MonoBehaviour,IDataPersistence
     {
         while(true)
         {
-        yield return new WaitForSeconds(Random.Range(2,4));
+        yield return new WaitForSeconds(Random.Range(1.4f,1.9f));
         if(player1.activeInHierarchy)
-        player=player1;
+                player=player1;
+        else if (player2.activeInHierarchy)
+                player = player2;
+        else if (player3.activeInHierarchy)
+                player = player3;
+            if (themes == 0)
+                randomindex = Random.Range(0, 6);
         else
-        player=player2;
-        randomindex = Random.Range(0,obs.Length);
-        randomside = Random.Range(0,2);
+                randomindex = Random.Range(6, obs.Length);
+            randomside = Random.Range(0,2);
         spawn = Instantiate(obs[randomindex]);
         spd = Random.Range(4,6);
         // Debug.Log(spd);
         if(randomside==0)
         {
             spawn.transform.position=UpPos.position;
-            spawn.GetComponent<Monster>().speed = -spd;
+            spawn.GetComponent<Monster>().speed = -6;
             spawn.GetComponent<Monster>().score = score;
             spawn.GetComponent<Monster>().player=player;
             spawn.transform.localScale= new Vector3(spawn.transform.localScale.x,-spawn.transform.localScale.y,spawn.transform.localScale.z);
@@ -49,7 +56,7 @@ public class Hard : MonoBehaviour,IDataPersistence
         else
         {
             spawn.transform.position=downPos.position;
-            spawn.GetComponent<Monster>().speed = -spd;
+            spawn.GetComponent<Monster>().speed = -6;
             spawn.GetComponent<Monster>().score = score;
             spawn.GetComponent<Monster>().player=player;
         }
@@ -62,7 +69,10 @@ public class Hard : MonoBehaviour,IDataPersistence
     {
         scoretext.text = ""+ score.val();
     }
-    public void LoadData(GameData data){}
+    public void LoadData(GameData data)
+    {
+        themes = data.theme;
+    }
 
     public void SaveData(ref GameData data)
     {

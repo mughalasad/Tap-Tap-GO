@@ -14,7 +14,7 @@ public class Volumecontrol : MonoBehaviour,IDataPersistence
         tog.isOn=Mute;
         if(tog.isOn)
      {  
-        mixer.SetFloat("Master",Mathf.Log10(0.001f)*20);
+        mixer.SetFloat("Master",Mathf.Log10(0.00001f)*20);
     }
         else
         {mixer.SetFloat("Master",Mathf.Log10(1f)*20);
@@ -44,7 +44,7 @@ public class Volumecontrol : MonoBehaviour,IDataPersistence
             mixer.SetFloat("Master",Mathf.Log10(1f)*20);
             Mute=mute;
         }
-       DataPersistenceManager.instance.SaveGame();  
+       //DataPersistenceManager.instance.SaveGame();  
     }
 
     // public void mute()

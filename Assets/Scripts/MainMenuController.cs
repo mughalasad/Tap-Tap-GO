@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Diagnostics;
 using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
@@ -30,5 +31,6 @@ public class MainMenuController : MonoBehaviour
         play.SetActive(false);
         stop.SetActive(false);
         pausebutton.SetActive(true);
+        //Utils.ForceCrash(ForcedCrashCategory.Abort);
     }
 }

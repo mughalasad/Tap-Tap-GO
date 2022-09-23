@@ -162,7 +162,7 @@ PlayerSettings:
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 2
+  AndroidBundleVersionCode: 3
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
@@ -244,13 +244,13 @@ PlayerSettings:
   useCustomMainGradleTemplate: 1
   useCustomLauncherGradleManifest: 1
   useCustomBaseGradleTemplate: 1
-  useCustomGradlePropertiesTemplate: 0
+  useCustomGradlePropertiesTemplate: 1
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 3
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: E:/user.keystore
+  AndroidKeystoreName: E:/taptapgo.keystore
   AndroidKeyaliasName: pass
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -866,7 +866,7 @@ PlayerSettings:
   cloudProjectId: 3e244fdc-37f9-4673-861c-82838c63490c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Tap Tap Go (1)
+  projectName: Tap Tap Go
   organizationId: arhpezgames
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

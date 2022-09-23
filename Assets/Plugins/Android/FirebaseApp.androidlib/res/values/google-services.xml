@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_android_client_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://taptapgo-6068c.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">341448427801</string>
+  <string name="google_storage_bucket" translatable="false">taptapgo-6068c.appspot.com</string>
+  <string name="project_id" translatable="false">taptapgo-6068c</string>
+  <string name="google_api_key" translatable="false">AIzaSyAfdOI7Wr908RXni9C4cJ_hSNAVphVjAfI</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAfdOI7Wr908RXni9C4cJ_hSNAVphVjAfI</string>
+  <string name="google_app_id" translatable="false">1:341448427801:android:1bb9f9cc6628a99b301d88</string>
+  <string name="default_android_client_id" translatable="false">341448427801-ru00uljds6g601p794goffhljnmk3ce2.apps.googleusercontent.com</string>
+  <string name="default_web_client_id" translatable="false">341448427801-7h5gfd63vpo7sd8f97f96jcfim9n9sgp.apps.googleusercontent.com</string>
+</resources>
