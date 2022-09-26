@@ -29,7 +29,7 @@ public class Hard : MonoBehaviour,IDataPersistence
     {
         while(true)
         {
-        yield return new WaitForSeconds(Random.Range(1.4f,1.9f));
+        yield return new WaitForSeconds(1.9f);
         if(player1.activeInHierarchy)
                 player=player1;
         else if (player2.activeInHierarchy)

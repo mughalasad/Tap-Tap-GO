@@ -31,7 +31,7 @@ public class collis : MonoBehaviour
     }
     void Update()
     {
-     if (transform.position.x < -8.97 || transform.position.x > 8.77 || transform.position.y < -4.8 || transform.position.y > 5.5)
+     if (transform.position.x < -10 || transform.position.x > 10 || transform.position.y < -4.8 || transform.position.y > 5.5)
        {  
         Time.timeScale = 0f;
         die.SetActive(true);
