@@ -12,11 +12,13 @@ public class Spawner : MonoBehaviour,IDataPersistence
     private GameObject spawn;
     private int randomindex;
     private int randomside;
+    private int themes;
     [SerializeField] public TextMeshProUGUI scoretext;
 
     [SerializeField] private Transform UpPos,downPos;
     [SerializeField] private GameObject player1;
     [SerializeField] private GameObject player2;
+    [SerializeField] private GameObject player3;
     private GameObject player;
     scorecounter score = new scorecounter();
     // Start is called before the first frame update
@@ -32,10 +34,15 @@ public class Spawner : MonoBehaviour,IDataPersistence
         // yield return new WaitForSeconds(Random.Range(2,4));
         yield return new WaitForSeconds(3);
         if(player1.activeInHierarchy)
-        player=player1;
+                player=player1;
+        else if(player2.activeInHierarchy)
+                player=player2;
+        else if(player3.activeInHierarchy)
+                player=player3;
+        if (themes == 0)
+                randomindex = Random.Range(0, 6);
         else
-        player=player2;
-        randomindex = Random.Range(0,obs.Length);
+                randomindex = Random.Range(6, obs.Length);
         randomside = Random.Range(0,2);
         spawn = Instantiate(obs[randomindex]);
         // Debug.Log(spd);
@@ -64,7 +71,10 @@ public class Spawner : MonoBehaviour,IDataPersistence
     {
         scoretext.text = ""+ score.val();
     }
-    public void LoadData(GameData data){}
+    public void LoadData(GameData data)
+    {
+        themes = data.theme;
+    }
 
     public void SaveData(ref GameData data)
     {

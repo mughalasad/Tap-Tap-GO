@@ -14,7 +14,7 @@ public class HighScore : MonoBehaviour,IDataPersistence
     {
         Score = data.score;
         highscore();
-        Debug.Log(Application.version);
+        //Debug.Log(Application.version);
     }
 
     public void SaveData(ref GameData data)

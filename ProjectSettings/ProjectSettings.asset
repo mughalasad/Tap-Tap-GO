@@ -134,8 +134,10 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.0(1)
-  preloadedAssets: []
+  bundleVersion: 1.0.0(2)
+  preloadedAssets:
+  - {fileID: 8218398792629882184, guid: 99f4ae01cad5a7d4a9835a9db85cb99f, type: 2}
+  - {fileID: 11400000, guid: 1b23a836d9e0792468039061841a903c, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -162,7 +164,7 @@ PlayerSettings:
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 2
+  AndroidBundleVersionCode: 3
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
@@ -244,13 +246,13 @@ PlayerSettings:
   useCustomMainGradleTemplate: 1
   useCustomLauncherGradleManifest: 1
   useCustomBaseGradleTemplate: 1
-  useCustomGradlePropertiesTemplate: 0
+  useCustomGradlePropertiesTemplate: 1
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 3
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: E:/user.keystore
+  AndroidKeystoreName: E:/taptapgo.keystore
   AndroidKeyaliasName: pass
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -866,7 +868,7 @@ PlayerSettings:
   cloudProjectId: 3e244fdc-37f9-4673-861c-82838c63490c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Tap Tap Go (1)
+  projectName: Tap Tap Go
   organizationId: arhpezgames
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
