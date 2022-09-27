@@ -134,10 +134,8 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.0(2)
-  preloadedAssets:
-  - {fileID: 8218398792629882184, guid: 99f4ae01cad5a7d4a9835a9db85cb99f, type: 2}
-  - {fileID: 11400000, guid: 1b23a836d9e0792468039061841a903c, type: 2}
+  bundleVersion: 1.0.0(1)
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -253,7 +251,7 @@ PlayerSettings:
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: E:/taptapgo.keystore
-  AndroidKeyaliasName: pass
+  AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1

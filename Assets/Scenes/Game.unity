@@ -5395,6 +5395,7 @@ MonoBehaviour:
   - {fileID: 6359077231167355567, guid: 13abcd36cce063c4ea466d12f7127df9, type: 3}
   - {fileID: 6359077231167355567, guid: 6f09b1a0bb5ddae41a99f1fcc952068a, type: 3}
   - {fileID: 6359077231167355567, guid: 69fc8f7c938dfc44f855eb940751f0f7, type: 3}
+  - {fileID: 6359077231167355567, guid: 69fc8f7c938dfc44f855eb940751f0f7, type: 3}
   scoretext: {fileID: 2104108457}
   UpPos: {fileID: 122373200}
   downPos: {fileID: 1870355937}

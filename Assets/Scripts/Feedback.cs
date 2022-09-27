@@ -1,10 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UI;
 
 public class Feedback : MonoBehaviour
 {
@@ -62,8 +59,7 @@ public class Feedback : MonoBehaviour
             return;
         }
         feedbacktext.text = "";
-        email.text = "";
-        feedback.text = "";
+        
         WWWForm form = new WWWForm();
         form.AddField("entry.973027100",e);
         form.AddField("entry.141301989",f);
@@ -79,11 +75,14 @@ public class Feedback : MonoBehaviour
          // check for errors
          if (www.error == null)
         {
+            email.text = "";
+            feedback.text = "";
             Debug.Log("WWW Ok!: " + www.result);// contains all the data sent from the server
             feedbackmenu.SetActive(false);
         }
         else
         {
+            feedbacktext.text = "" + www.result;
             Debug.Log("WWW Error: " + www.result);
         }
         yield break; 

@@ -29,7 +29,7 @@ public class Medium : MonoBehaviour, IDataPersistence
     {
         while (true)
         {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(2.2f);
             if (player1.activeInHierarchy)
                 player = player1;
             else if (player2.activeInHierarchy)

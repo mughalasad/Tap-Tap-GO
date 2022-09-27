@@ -1,9 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 using UnityEngine.Networking;
 
 public class update : MonoBehaviour, IDataPersistence
@@ -45,7 +42,6 @@ public class update : MonoBehaviour, IDataPersistence
         {
             check = false;
             updatemenu.SetActive(true);
-            PlayerPrefs.SetInt("update", 1);
             if (upd.Forceupdate==true)
             {
                 close.SetActive(false);
@@ -62,6 +58,7 @@ public class update : MonoBehaviour, IDataPersistence
     public void Updating()
     {
         Application.OpenURL("https://play.google.com/store/apps/details?id=com.arhpez.taptapgo");
+        updatemenu.SetActive(false);
     }
     [RuntimeInitializeOnLoadMethod]
     static void OnRuntimeMethodLoad()

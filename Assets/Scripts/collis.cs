@@ -28,10 +28,14 @@ public class collis : MonoBehaviour
         {
             Advertisement.Show("Interstitial_Android");
         }  
+        if(Advertisement.IsReady("Interstitial_iOS"))
+        {
+            Advertisement.Show("Interstitial_iOS");
+        }
     }
     void Update()
     {
-     if (transform.position.x < -10 || transform.position.x > 10 || transform.position.y < -4.8 || transform.position.y > 5.5)
+     if (transform.position.x < -11.5 || transform.position.x > 11.5 || transform.position.y < -4.8 || transform.position.y > 5.5)
        {  
         Time.timeScale = 0f;
         die.SetActive(true);
