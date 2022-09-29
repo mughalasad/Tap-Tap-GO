@@ -17,7 +17,6 @@ public class update : MonoBehaviour, IDataPersistence
         //WWW www = new WWW(url);
         UnityWebRequest www = UnityWebRequest.Get(url);
         StartCoroutine(WaitForRequest(www));
-        PlayerPrefs.GetInt("score", 0);
     }
     public void LoadData(GameData data) 
     {
